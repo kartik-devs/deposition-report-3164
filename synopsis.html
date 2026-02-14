@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Project Synopsis – AI-Powered Medical Document Intelligence Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            padding: 48px 44px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .header h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+        .header .subtitle {
+            font-size: 15px;
+            color: #64748b;
+            font-weight: 400;
+        }
+        .qr-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 24px;
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+        }
+        .qr-section img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 12px;
+        }
+        .qr-section p {
+            font-size: 13px;
+            color: #0369a1;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 32px 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #334155;
+            margin: 20px 0 8px;
+        }
+        p, li {
+            font-size: 14px;
+            color: #475569;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 8px 0 16px;
+        }
+        li { margin-bottom: 6px; }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 16px;
+        }
+        .card h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+        .card p { font-size: 13px; margin: 0; }
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0 20px;
+        }
+        .badge {
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px 12px;
+            border-radius: 999px;
+            border: 1px solid;
+        }
+        .badge-blue { background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe; }
+        .badge-green { background: #f0fdf4; color: #166534; border-color: #bbf7d0; }
+        .badge-purple { background: #faf5ff; color: #7e22ce; border-color: #e9d5ff; }
+        .badge-amber { background: #fffbeb; color: #92400e; border-color: #fde68a; }
+        .arch-diagram {
+            background: #0f172a;
+            color: #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin: 16px 0;
+            white-space: pre;
+        }
+        .highlight-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 16px 0;
+        }
+        .highlight-box p { font-size: 13px; color: #166534; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 13px;
+        }
+        th, td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background: #f1f5f9;
+            font-weight: 600;
+            color: #334155;
+            font-size: 12px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        @media (max-width: 640px) {
+            .container { padding: 28px 20px; }
+            .grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <h1>AI-Powered Medical Document Intelligence Platform</h1>
+        <p class="subtitle">Automated OCR Processing, Validation & Report Generation for Legal-Medical Documentation</p>
+    </div>
+
+    <div class="qr-section">
+        <img src="report_qr_code.png" alt="QR Code - Scan to view sample report"/>
+        <p>Scan to view a live sample report generated by this platform</p>
+    </div>
+
+    <h2>1. Problem Statement</h2>
+    <p>
+        Legal-medical documentation workflows involve processing hundreds of pages of medical records, imaging reports,
+        and clinical notes to produce structured analytical reports. This process is traditionally manual, error-prone,
+        and time-intensive. Key challenges include:
+    </p>
+    <ul>
+        <li>High volume of unstructured documents (scanned PDFs, handwritten notes, faxed records)</li>
+        <li>Risk of transcription errors from poor-quality scans</li>
+        <li>Need for cross-referencing data across multiple sources to detect inconsistencies</li>
+        <li>Repetitive formatting and structuring of analytical reports</li>
+        <li>No automated way to validate extracted data against source documents</li>
+    </ul>
+
+    <h2>2. Proposed Solution</h2>
+    <p>
+        An end-to-end AI platform that ingests raw medical documents, extracts and classifies content using OCR and
+        LLMs, validates the extracted data for accuracy, and generates professionally formatted analytical reports —
+        all with full audit trails and confidence scoring.
+    </p>
+
+    <div class="highlight-box">
+        <p><strong>Key Innovation:</strong> The system combines multi-model AI orchestration (OCR + LLM + embeddings)
+        with a 25+ point automated validation framework that detects factual contradictions, hallucinations,
+        and temporal inconsistencies across documents — significantly reducing human review time.</p>
+    </div>
+
+    <h2>3. Tech Stack</h2>
+
+    <h3>Core Technologies</h3>
+    <div class="tech-badges">
+        <span class="badge badge-blue">Python</span>
+        <span class="badge badge-blue">FastAPI</span>
+        <span class="badge badge-blue">LangGraph</span>
+        <span class="badge badge-green">Google Vertex AI</span>
+        <span class="badge badge-green">Gemini 2.5 Pro</span>
+        <span class="badge badge-purple">AWS S3</span>
+        <span class="badge badge-purple">AWS Textract</span>
+        <span class="badge badge-amber">Sentence-Transformers</span>
+        <span class="badge badge-amber">Tesseract OCR</span>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h4>Backend</h4>
+            <p>FastAPI with async processing, modular routers, Uvicorn ASGI server</p>
+        </div>
+        <div class="card">
+            <h4>AI / LLM</h4>
+            <p>Gemini 2.5 Pro via Vertex AI for document analysis, classification, and report generation</p>
+        </div>
+        <div class="card">
+            <h4>OCR Pipeline</h4>
+            <p>AWS Textract (primary) + Tesseract (fallback), with confidence scoring per page</p>
+        </div>
+        <div class="card">
+            <h4>Orchestration</h4>
+            <p>LangGraph state machines for multi-step document processing with rate limiting</p>
+        </div>
+        <div class="card">
+            <h4>Matching & NLP</h4>
+            <p>Sentence-Transformers for semantic embeddings, RapidFuzz for fuzzy string matching</p>
+        </div>
+        <div class="card">
+            <h4>Cloud Infrastructure</h4>
+            <p>AWS (S3, Textract, EC2) + GCP (Vertex AI, TTS) hybrid deployment</p>
+        </div>
+    </div>
+
+    <h2>4. System Architecture</h2>
+    <div class="arch-diagram">
+┌─────────────────────────────────────────────────────────┐
+│                    FastAPI Application                    │
+│         (Async REST API + Static Dashboard)               │
+├──────────┬──────────────┬──────────────┬────────────────┤
+│  OCR     │  Deposition  │  Validation  │  Formatting    │
+│  Router  │  Router      │  Router      │  Router        │
+├──────────┴──────────────┴──────────────┴────────────────┤
+│                                                           │
+│              LangGraph Orchestration Engine                │
+│     (State Machines · Async Batching · Rate Limiting)     │
+│                                                           │
+├───────────────────────────────────────────────────────────┤
+│                                                           │
+│   ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│   │  OCR Layer   │  │  LLM Layer   │  │  Validation  │  │
+│   │  Textract +  │  │  Gemini 2.5  │  │  25+ Auto    │  │
+│   │  Tesseract   │  │  Pro         │  │  Checks      │  │
+│   └──────┬───────┘  └──────┬───────┘  └──────┬───────┘  │
+│          │                 │                  │           │
+├──────────┴─────────────────┴──────────────────┴──────────┤
+│                    External Services                      │
+│   AWS S3 · AWS Textract · Vertex AI · Google TTS          │
+└───────────────────────────────────────────────────────────┘
+    </div>
+
+    <h2>5. Key Features</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Intelligent OCR</strong></td>
+                <td>Multi-engine OCR with automatic fallback and per-page confidence scoring</td>
+            </tr>
+            <tr>
+                <td><strong>Document Classification</strong></td>
+                <td>LLM-powered automatic categorization of medical records by type, provider, and date</td>
+            </tr>
+            <tr>
+                <td><strong>Contradiction Detection</strong></td>
+                <td>Cross-references data across all documents to surface factual inconsistencies</td>
+            </tr>
+            <tr>
+                <td><strong>Automated Validation</strong></td>
+                <td>25+ checks for hallucination detection, temporal logic, numeric consistency, and completeness</td>
+            </tr>
+            <tr>
+                <td><strong>Report Generation</strong></td>
+                <td>Produces structured HTML reports with interactive sections, charts, and expandable details</td>
+            </tr>
+            <tr>
+                <td><strong>Version Tracking</strong></td>
+                <td>Automated diff comparison across report versions with categorized change summaries</td>
+            </tr>
+            <tr>
+                <td><strong>Cost Projection Engine</strong></td>
+                <td>Generates lifetime cost projections with tabular breakdowns and pie chart visualizations</td>
+            </tr>
+            <tr>
+                <td><strong>Audit Trail</strong></td>
+                <td>Full LLM token usage, processing time, and cost tracking per section</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>6. Processing Pipeline</h2>
+    <ol style="padding-left: 20px; margin: 12px 0;">
+        <li><strong>Ingestion</strong> — Raw documents (PDFs, images) are uploaded to AWS S3</li>
+        <li><strong>OCR Extraction</strong> — AWS Textract extracts text; Tesseract used as fallback for low-confidence pages</li>
+        <li><strong>Classification</strong> — LLM classifies each page by document type, provider, specialty, and date</li>
+        <li><strong>Analysis</strong> — Gemini 2.5 Pro performs deep analysis: timeline construction, diagnosis extraction, contradiction detection</li>
+        <li><strong>Validation</strong> — 25+ automated checks verify extracted data against source documents</li>
+        <li><strong>Report Generation</strong> — Structured HTML report with interactive dashboard, charts, and expandable sections</li>
+        <li><strong>Review & Export</strong> — Human review via validation dashboard; final report hosted and shareable via QR code</li>
+    </ol>
+
+    <h2>7. Results & Impact</h2>
+    <div class="grid">
+        <div class="card">
+            <h4>Processing Speed</h4>
+            <p>Processes 190+ page document sets in minutes vs. hours of manual review</p>
+        </div>
+        <div class="card">
+            <h4>Accuracy</h4>
+            <p>Automated contradiction detection catches inconsistencies humans commonly miss</p>
+        </div>
+        <div class="card">
+            <h4>Cost Efficiency</h4>
+            <p>LLM processing cost under $0.20 per full report (tracked via built-in metrics)</p>
+        </div>
+        <div class="card">
+            <h4>Scalability</h4>
+            <p>Async architecture with token-bucket rate limiting handles concurrent workloads</p>
+        </div>
+    </div>
+
+    <h2>8. Future Scope</h2>
+    <ul>
+        <li>Multi-language OCR support for broader document coverage</li>
+        <li>Fine-tuned domain-specific models for higher extraction accuracy</li>
+        <li>Real-time collaborative review with role-based access control</li>
+        <li>Integration with case management systems via API connectors</li>
+        <li>Automated email parsing and communication timeline generation</li>
+    </ul>
+
+    <div class="footer">
+        <p>Project Synopsis — AI-Powered Medical Document Intelligence Platform</p>
+    </div>
+
+</div>
+</body>
+</html>
